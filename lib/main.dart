@@ -8,6 +8,7 @@ import 'firebase_options.dart';
 import 'package:flutter/services.dart';
 import 'class_page.dart';
 import 'auth/constants.dart';
+
 void main() async {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.blue,
@@ -25,11 +26,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-        return AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle(
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
-        ),
-        child: MaterialApp(
+      ),
+      child: MaterialApp(
         title: 'ClassChat',
         theme: ThemeData(
           // This is the theme of your application.
@@ -47,9 +48,10 @@ class MyApp extends StatelessWidget {
           //
           // This works for code too, not just values: Most code changes can be
           // tested with just a hot reload.
+          //yes
 
-          colorScheme:
-              ColorScheme.fromSeed(seedColor: theme,brightness: Brightness.light),
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: theme, brightness: Brightness.light),
           useMaterial3: false,
         ),
         home: AnimatedSplashScreen(
@@ -59,7 +61,9 @@ class MyApp extends StatelessWidget {
           splashTransition: SplashTransition.fadeTransition,
           backgroundColor: Colors.blue,
           nextScreen: AuthPage(),
-        ),),);
+        ),
+      ),
+    );
   }
 }
 
