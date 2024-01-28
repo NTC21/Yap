@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import './auth/auth.dart';
 import 'message_page.dart';
 import 'auth/constants.dart';
-import 'message_page.dart';
     
 class ClassPage extends StatefulWidget {
   const ClassPage({super.key});

@@ -1,7 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:classchat/auth/constants.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 class ThemePage extends StatefulWidget {
   const ThemePage({super.key});
 

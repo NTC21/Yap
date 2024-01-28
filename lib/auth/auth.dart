@@ -1,10 +1,7 @@
 import 'package:classchat/auth/login_or_register.dart';
 import 'package:classchat/auth/register_classes.dart';
-import 'package:classchat/profile_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:classchat/message_page.dart';
 import 'package:classchat/main.dart';
 import 'constants.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';

@@ -1,5 +1,4 @@
 import 'package:classchat/main.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -143,7 +142,7 @@ class _RegisterClasses extends State<RegisterClasses> {
                               style: const TextStyle(color: Colors.white),
                             ),
                               //how do i style the buttons individually?
-                            style: ElevatedButton.styleFrom(primary: buttonColor),),
+                            style: ElevatedButton.styleFrom(backgroundColor: buttonColor),),
                         );
                       }
                       return GridView.count(

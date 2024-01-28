@@ -10,7 +10,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'settings.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -115,14 +114,12 @@ class _ProfilePageState extends State<ProfilePage> {
       isLoading = true;
     });
     Uint8List img = await pickImage(ImageSource.gallery);
-    if(img != null){
-      setState(() {
-        _image = img;
-      });
-      saveProfile();
-      await Future.delayed(Duration(milliseconds: 700));
-    }
     setState(() {
+      _image = img;
+    });
+    saveProfile();
+    await Future.delayed(Duration(milliseconds: 700));
+      setState(() {
       isLoading = false;
     });
   }

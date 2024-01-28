@@ -2,7 +2,6 @@ import 'package:classchat/friend_profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import '/auth/constants.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 class SearchPage extends StatefulWidget {
@@ -118,7 +117,7 @@ class _SearchPageState extends State<SearchPage>{
           child: _foundedUsers.length > 0 ? ListView.builder(
             itemCount: users.length,
             itemBuilder: (context, index) {
-              final user = users[index].id!;
+              final user = users[index].id;
               final imageUrl = index < imgList.length ? imgList[index] : 'https://www.pngitem.com/pimgs/m/30-307416_profile-icon-png-image-free-download-searchpng-employee.png';
               return ListTile(
                 leading: CircleAvatar(

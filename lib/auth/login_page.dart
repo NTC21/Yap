@@ -1,12 +1,9 @@
 import 'package:classchat/auth/auth.dart';
-import 'package:classchat/auth/register_classes.dart';
 import 'package:classchat/button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:classchat/text_field.dart';
-import '../main.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:classchat/auth/constants.dart';
 
 bool isClassRegistered = true;
 final _firestore = FirebaseFirestore.instance;

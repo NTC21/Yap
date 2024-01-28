@@ -1,11 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:classchat/auth/login_or_register.dart';
-import 'package:classchat/auth/register_page.dart';
 import 'package:flutter/material.dart';
-import 'message_page.dart';
 import 'search_page.dart';
 import 'auth/auth.dart';
-import 'text_box.dart';
 import 'profile_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
