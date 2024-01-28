@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 
 import 'package:classchat/auth/auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -6,11 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:classchat/text_field.dart';
 import 'package:classchat/button.dart';
-import 'package:classchat/auth/constants.dart';
-import'package:classchat/resources/add_data.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'dart:io';
-import 'dart:typed_data';
 import 'package:flutter/services.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -99,7 +94,7 @@ class _RegisterPageState extends State<RegisterPage> {
     });
     Uint8List? _image = await convertImageToUint8List('images/owl2.png');
     String resp = await saveData(
-        file: _image!
+        file: _image
     );
     setState(() {
       isLoading = false;

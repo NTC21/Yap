@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:classchat/auth/auth.dart';
 import 'package:classchat/components/wall_post.dart';
@@ -10,12 +9,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'auth/constants.dart';
-import 'class_page.dart';
-import 'search_page.dart';
 import 'resources/add_data.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:math';
-import 'class_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
